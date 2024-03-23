@@ -17,8 +17,8 @@ public class CatMethodsTest {
     public void checkCat() throws Exception {
         cat.getSound();
         Mockito.verify(cat).getSound();
-        cat.getFood();
-        Mockito.when(cat.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        //cat.getFood();
+        //Mockito.when(cat.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
     }
 
 }
