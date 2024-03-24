@@ -14,11 +14,17 @@ public class LionMethodsTest {
     Lion lion;
 
     @Test
-    public void checkLion() throws Exception {
+    public void checkGetKittens() {
         lion.getKittens();
         Mockito.verify(lion).getKittens();
+    }
+    @Test
+    public void checkDoesHaveMane() throws Exception {
         lion.doesHaveMane();
         Mockito.when(lion.doesHaveMane()).thenReturn(true);
+    }
+    @Test
+    public void checkGetFood() throws Exception {
         lion.getFood();
         Mockito.when(lion.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
     }

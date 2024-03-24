@@ -1,15 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: com.example.LionMethodsTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.057 s <<< FAILURE! -- in com.example.LionMethodsTest
-com.example.LionMethodsTest.unnecessary Mockito stubbings -- Time elapsed: 0.047 s <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.079 s <<< FAILURE! -- in com.example.LionMethodsTest
+com.example.LionMethodsTest.unnecessary Mockito stubbings -- Time elapsed: 0.007 s <<< ERROR!
 org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 
 Unnecessary stubbings detected in test class: LionMethodsTest
 Clean & maintainable test code requires zero unnecessary code.
 Following stubbings are unnecessary (click to navigate to relevant line of code):
-  1. -> at com.example.LionMethodsTest.checkLion(LionMethodsTest.java:21)
-  2. -> at com.example.LionMethodsTest.checkLion(LionMethodsTest.java:23)
+  1. -> at com.example.LionMethodsTest.checkGetFood(LionMethodsTest.java:38)
+  2. -> at com.example.LionMethodsTest.checkDoesHaveMane(LionMethodsTest.java:33)
+  3. -> at com.example.LionMethodsTest.checkLion(LionMethodsTest.java:21)
+  4. -> at com.example.LionMethodsTest.checkLion(LionMethodsTest.java:23)
 Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
 	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:53)
 	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
