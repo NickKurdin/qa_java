@@ -4,7 +4,8 @@ import java.util.List;
 
 public class Lion {
 
-    boolean hasMane;
+    private boolean hasMane;
+    private FelineLion felineLion;
 
     public Lion(String sex, FelineLion felineLion) throws Exception {
         this.felineLion = felineLion;
@@ -17,7 +18,6 @@ public class Lion {
         }
     }
 
-    private FelineLion felineLion;
     public int getKittens() {
         return felineLion.getKittens();
     }

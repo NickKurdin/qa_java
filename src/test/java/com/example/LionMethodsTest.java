@@ -18,11 +18,13 @@ public class LionMethodsTest {
         lion.getKittens();
         Mockito.verify(lion).getKittens();
     }
+
     @Test
     public void checkDoesHaveMane() throws Exception {
         lion.doesHaveMane();
         Mockito.when(lion.doesHaveMane()).thenReturn(true);
     }
+
     @Test
     public void checkGetFood() throws Exception {
         lion.getFood();

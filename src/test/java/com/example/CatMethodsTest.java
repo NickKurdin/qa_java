@@ -12,11 +12,13 @@ import java.util.List;
 public class CatMethodsTest {
     @Mock
     Cat cat;
+
     @Test
     public void checkGetSound() throws Exception {
         cat.getSound();
         Mockito.verify(cat).getSound();
     }
+
     @Test
     public void checkGetFood() throws Exception {
         cat.getFood();
